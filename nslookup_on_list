@@ -1,0 +1,1 @@
+ruby -e 'File.foreach("<file>") {|i| i.rstrip!; i.<<(".domain"); puts `nslookup #{i}`}' > nslookup
